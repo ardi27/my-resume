@@ -1,9 +1,9 @@
 import Navbar from "./components/Navbar";
 import Summary from "./components/Summary";
 import WorkExperience from "./components/WorkExperience";
+import { Analytics } from "@vercel/analytics/react";
 
 export default function Home() {
-
   return (
     <div>
       <Navbar />
@@ -11,6 +11,7 @@ export default function Home() {
         <Summary />
         <WorkExperience />
       </div>
+      <Analytics />
     </div>
   );
 }
