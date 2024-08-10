@@ -5,7 +5,7 @@ import LinkPreviewer from "./LinkPreviewer";
 export default async function WorkExperience() {
   const experience: any = await getExperience();
   return (
-    <div id="experience" className="h-screen pt-8 space-y-5">
+    <div id="experience" className="pt-8 space-y-5">
       <p className="text-2xl font-bold">Work Experience</p>
       {experience.map((item: any, i: number) => (
         <div
@@ -25,20 +25,20 @@ export default async function WorkExperience() {
                 <div className="flex flex-row">
                   <p className="text-sm font-medium">{item.company}</p>
                   <p className="px-2">·</p>
-                  <p className="text-sm font-regular text-gray-700">
+                  <p className="text-sm font-regular text-gray-700 dark:text-gray-400">
                     {item.type}
                   </p>
                 </div>
-                <div className="flex flex-row text-sm font-regular text-gray-700">
+                <div className="flex flex-row text-sm font-regular text-gray-700 dark:text-gray-400">
                   <p className="">{item.date}</p>
                 </div>
-                <div className="flex flex-row text-sm font-regular text-gray-700">
+                <div className="flex flex-row text-sm font-regular text-gray-700 dark:text-gray-400">
                   <p className="">{item.location}</p>
                   <p className="px-2">·</p>
                   <p className="">{item.arrangement}</p>
                 </div>
               </div>
-              <ul className="text-sm font-regular text-gray-700">
+              <ul className="text-sm font-regular text-gray-700 dark:text-gray-400">
                 {item.description.map((desc: string, index: number) => (
                   <li key={index}>- {desc}</li>
                 ))}
