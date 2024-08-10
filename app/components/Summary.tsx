@@ -19,23 +19,24 @@ export default function Summary() {
           successful projects.
         </p>
         <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4">
-          <button className="h-12 w-full bg-black text-white text-xl px-auto py-auto rounded-lg dark:bg-white dark:text-black">
-            <Link href="https://github.com/ardi27" target="_blank">
-              Github
-            </Link>
-          </button>
-          <button className="h-12 w-full border border-solid border-black text-black  text-xl px-auto py-auto rounded-lg dark:border-white dark:text-white">
-            <Link
-              href="https://www.linkedin.com/in/ardi-prima/"
-              target="_blank"
-            >
-              LinkedIn
-            </Link>
-          </button>
+          <Link
+            href="https://github.com/ardi27"
+            className="h-12 w-full bg-black text-white text-xl px-auto py-auto rounded-lg dark:bg-white dark:text-black flex justify-center items-center"
+            target="_blank"
+          >
+            Github
+          </Link>
+
+          <Link
+            href="https://www.linkedin.com/in/ardi-prima/"
+            className="h-12 w-full border border-solid border-black text-black text-xl rounded-lg dark:border-white dark:text-white flex justify-center items-center"
+            target="_blank"
+          >
+            LinkedIn
+          </Link>
         </div>
       </div>
       <Image
-        // src="https://avatars.githubusercontent.com/u/29269251?v=4"
         src="https://instagram.fcgk27-1.fna.fbcdn.net/v/t51.2885-19/443240568_424927340260163_6546875819672459448_n.jpg?_nc_ht=instagram.fcgk27-1.fna.fbcdn.net&_nc_cat=111&_nc_ohc=0nY2Oio7Cv8Q7kNvgHcTVPv&edm=APHcPcMBAAAA&ccb=7-5&oh=00_AYCOZ_UMeK3OzOY44OtWyA0BswGfhKsxQxBKa61SzHb1hA&oe=66BD00D8&_nc_sid=bef7bc"
         alt="Next.js Logo"
         width={400}
