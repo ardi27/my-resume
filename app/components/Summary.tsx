@@ -10,13 +10,13 @@ export default function Summary() {
           Hello, my name is Ardi Prima
         </p>
         <p className=" font-light text-lg text-justify">
-          I am a Mobile Engineer with 3 years experience in the full life cycle
-          of the mobile development process including requirements gathering,
-          design, coding, testing, debugging and maintenance. I have a strong
-          understanding of Dart programming language and the Flutter framework.
-          My expertise includes state management, API integration, and testing.
-          I am a team player and enjoy collaborating with others to deliver
-          successful projects.
+          I am a Mobile Engineer with {new Date().getFullYear() - 2021} years
+          experience in the full life cycle of the mobile development process
+          including requirements gathering, design, coding, testing, debugging
+          and maintenance. I have a strong understanding of Dart programming
+          language and the Flutter framework. My expertise includes state
+          management, API integration, and testing. I am a team player and enjoy
+          collaborating with others to deliver successful projects.
         </p>
         <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4">
           <Link
