@@ -9,7 +9,6 @@ import { MoonIcon } from "./MoonIcon";
 const ThemeSwitcher = () => {
   const [mounted, setMounted] = useState(false);
   const { theme, setTheme } = useTheme();
-  const t = useTheme();
 
   useEffect(() => {
     setMounted(true);
