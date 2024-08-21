@@ -3,9 +3,9 @@ import Link from "next/link";
 
 export default function Summary() {
   return (
-    <div className="grid grid-cols-1 items-center md:grid-cols-2">
-      <div className=" md:pr-8 space-y-4">
-        <p className="text-2xl font-bold text-left">Mobile Engineer</p>
+    <div className="flex flex-col-reverse min-h-[calc(100vh-64px)] md:flex-row md:items-center">
+      {/*  <div className="min-h-[calc(100vh-64px)] flex items-center justify-center"> */}
+      <div className=" md:pr-8 space-y-4 w-full md:w-2/3">
         <p className="text-4xl font-extrabold text-justify">
           Hello, my name is Ardi Prima
         </p>
@@ -42,7 +42,7 @@ export default function Summary() {
         width={400}
         height={400}
         priority
-        className="p-4 rounded-full md:w-full self-center place-self-center"
+        className="p-4 rounded-full w-5/12 md:w-1/3 self-center place-self-center"
       />
     </div>
   );
